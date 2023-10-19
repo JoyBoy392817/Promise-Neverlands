@@ -1,8 +1,11 @@
-﻿Console.WriteLine(@"__        ___    ___ _____ _   _ _   _ ____  
+﻿Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine(@"__        ___    ___ _____ _   _ _   _ ____  
 \ \      / / \  |_ _|  ___| | | | \ | |  _ \ 
  \ \ /\ / / _ \  | || |_  | | | |  \| | | | |
   \ V  V / ___ \ | ||  _| | |_| | |\  | |_| |
    \_/\_/_/   \_\___|_|    \___/|_| \_|____/ ");
+Console.ResetColor();
+Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine(@"                                                                                                    
                                                        @%%%%@@                                      
                                                    %%#%########%%                                   
@@ -110,6 +113,7 @@ Console.WriteLine(@"
                                           ***#-------****=-----+#                                   
                                           *****#*+**%******####                                     
                                             *******    ******  ⠀");
+Console.ResetColor();
 string obsah_zemi = File.ReadAllText("zeme.txt");
 string[] zeme = obsah_zemi.Split(new[] {"\n"}, StringSplitOptions.None);
 List<string> seznam = zeme.ToList();
